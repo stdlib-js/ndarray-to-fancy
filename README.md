@@ -42,8 +42,8 @@ limitations under the License.
 A fancy ndarray is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing via indexing expressions.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 // Create a plain ndarray:
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -81,20 +81,32 @@ arr = ndarray2array( z );
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-to-fancy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
+var ndarray2fancy = require( '@stdlib/ndarray-to-fancy' );
 ```
 
 #### ndarray2fancy( x\[, options] )
@@ -113,6 +125,7 @@ The function supports the following options:
 
     -   **data**: the underlying index ndarray.
     -   **type**: the index type. Must be either `'mask'`, `'bool'`, or `'int'`.
+    -   **kind**: the index kind. Must be either `''`, `'cartesian'`, or `'linear'`.
     -   **dtype**: the [data type][@stdlib/ndarray/dtypes] of the underlying ndarray.
 
     If an ndarray index is not associated with a provided identifier, the `get` method should return `null`.
@@ -153,6 +166,7 @@ The function supports the following options:
 
     -   **data**: the underlying index ndarray.
     -   **type**: the index type. Must be either `'mask'`, `'bool'`, or `'int'`.
+    -   **kind**: the index kind. Must be either `''`, `'cartesian'`, or `'linear'`.
     -   **dtype**: the [data type][@stdlib/ndarray/dtypes] of the underlying ndarray.
 
     If an ndarray index is not associated with a provided identifier, the `get` method should return `null`.
@@ -216,6 +230,10 @@ For documentation and usage, see [`ndindex`][@stdlib/ndarray/index].
 
 // TODO: see array/to-fancy
 
+### Linear Indexing
+
+// TODO: only applies to non-zero-dimensional ndarrays. In non-strict mode, out-of-bounds indices return `undefined` and fail to assign.
+
 ### Broadcasting
 
 // TODO: see array/to-fancy
@@ -241,11 +259,11 @@ For documentation and usage, see [`ndindex`][@stdlib/ndarray/index].
 <!-- eslint-disable new-cap, array-element-newline, comma-spacing -->
 
 ```javascript
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
+var S = require( '@stdlib/slice-ctor' );
+var E = require( '@stdlib/slice-multi' );
+var toArray = require( '@stdlib/ndarray-to-array' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2fancy = require( '@stdlib/ndarray-to-fancy' );
 
 var buffer = [
     1, 2,
@@ -335,7 +353,7 @@ console.log( toArray( y4 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -398,21 +416,21 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-to-fancy/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray-index/tree/deno
+[@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray-index
 
-[@stdlib/repl]: https://github.com/stdlib-js/repl/tree/deno
+[@stdlib/repl]: https://github.com/stdlib-js/repl
 
-[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor/tree/deno
+[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor/tree/deno
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi/tree/deno
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
 
-[@stdlib/slice/seq2multislice]: https://github.com/stdlib-js/slice-seq2multislice/tree/deno
+[@stdlib/slice/seq2multislice]: https://github.com/stdlib-js/slice-seq2multislice
 
 </section>
 
