@@ -42,8 +42,8 @@ limitations under the License.
 A fancy ndarray is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing via indexing expressions.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 // Create a plain ndarray:
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -81,20 +81,32 @@ arr = ndarray2array( z );
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-to-fancy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
+var ndarray2fancy = require( '@stdlib/ndarray-to-fancy' );
 ```
 
 #### ndarray2fancy( x\[, options] )
@@ -246,17 +258,12 @@ For documentation and usage, see [`ndindex`][@stdlib/ndarray/index].
 
 <!-- eslint-disable new-cap, array-element-newline, comma-spacing -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
+```javascript
+var S = require( '@stdlib/slice-ctor' );
+var E = require( '@stdlib/slice-multi' );
+var toArray = require( '@stdlib/ndarray-to-array' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2fancy = require( '@stdlib/ndarray-to-fancy' );
 
 var buffer = [
     1, 2,
@@ -315,10 +322,6 @@ console.log( toArray( y3 ) );
 var y4 = y[ [ S(_,_,-2), S(_,_,-1) ] ];
 console.log( toArray( y4 ) );
 // => [ [ 20, 7 ], [ 4, 3 ] ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -337,6 +340,15 @@ console.log( toArray( y4 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-to-fancy`][@stdlib/array/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an array to an object supporting fancy indexing.</span>
+-   <span class="package-name">[`@stdlib/ndarray-array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray-fancy`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -350,7 +362,7 @@ console.log( toArray( y4 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -367,7 +379,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -413,21 +425,31 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-to-fancy/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray-index/tree/esm
+[@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray-index
 
-[@stdlib/repl]: https://github.com/stdlib-js/repl/tree/esm
+[@stdlib/repl]: https://github.com/stdlib-js/repl
 
-[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor/tree/esm
+[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor/tree/esm
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi/tree/esm
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
 
-[@stdlib/slice/seq2multislice]: https://github.com/stdlib-js/slice-seq2multislice/tree/esm
+[@stdlib/slice/seq2multislice]: https://github.com/stdlib-js/slice-seq2multislice
+
+<!-- <related-links> -->
+
+[@stdlib/array/to-fancy]: https://github.com/stdlib-js/array-to-fancy
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+
+[@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray-fancy
+
+<!-- </related-links> -->
 
 </section>
 
