@@ -88,13 +88,18 @@ arr = ndarray2array( z );
 ## Usage
 
 ```javascript
+import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-to-fancy/tags). For example,
+
+```javascript
 import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-deno/mod.js';
+import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
 ```
 
 #### ndarray2fancy( x\[, options] )
@@ -251,7 +256,7 @@ import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
 import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-deno/mod.js';
+import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@deno/mod.js';
 
 var buffer = [
     1, 2,
