@@ -88,13 +88,13 @@ arr = ndarray2array( z );
 ## Usage
 
 ```javascript
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
+import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
+import { factory, idx } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-esm/index.mjs';
 ```
 
 #### ndarray2fancy( x\[, options] )
@@ -256,7 +256,7 @@ import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
 import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@esm/index.mjs';
+import ndarray2fancy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-fancy@v0.1.0-esm/index.mjs';
 
 var buffer = [
     1, 2,
