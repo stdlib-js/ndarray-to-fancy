@@ -2,6 +2,52 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-10)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#11326](https://github.com/stdlib-js/stdlib/issues/11326)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`08f3a13`](https://github.com/stdlib-js/stdlib/commit/08f3a134dbfc9a1fee91a1d4074ae44a0e32674d) - **chore:** fix EditorConfig lint errors [(#11328)](https://github.com/stdlib-js/stdlib/pull/11328) _(by Guneet Gill)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Guneet Gill
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
