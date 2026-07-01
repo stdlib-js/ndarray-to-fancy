@@ -1,4 +1,4 @@
-"use strict";var u=function(r,i){return function(){return i||r((i={exports:{}}).exports,i),i.exports}};var k=u(function(Ha,U){
+"use strict";var u=function(r,i){return function(){try{return i||r((i={exports:{}}).exports,i),i.exports}catch(e){throw (i=0, e)}};};var k=u(function(Ha,U){
 var ge=require('@stdlib/proxy-ctor/dist'),Ee=typeof ge=="function";U.exports=Ee
 });var j=u(function(Ja,B){
 var Se=require('@stdlib/ndarray-base-assert-is-complex-floating-point-data-type/dist'),me=require('@stdlib/assert-is-number/dist').isPrimitive;function he(r){return me(r)?[r,0]:r}function Ie(r){return Se(r)?he:null}B.exports=Ie
