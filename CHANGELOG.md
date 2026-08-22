@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-19)
+## Unreleased (2026-08-22)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`fdbc822`](https://github.com/stdlib-js/stdlib/commit/fdbc82241f30438af95d53f451c1c4cd4523859f) - **chore:** remove unnecessary `format` calls [(#14520)](https://github.com/stdlib-js/stdlib/pull/14520) _(by Philipp Burckhardt)_
 -   [`5aadc76`](https://github.com/stdlib-js/stdlib/commit/5aadc76d03d8e3c511de2f14131be73dfe118af9) - **bench:** refactor to use string interpolation in `ndarray` [(#11445)](https://github.com/stdlib-js/stdlib/pull/11445) _(by Karan Anand)_
 -   [`08f3a13`](https://github.com/stdlib-js/stdlib/commit/08f3a134dbfc9a1fee91a1d4074ae44a0e32674d) - **chore:** fix EditorConfig lint errors [(#11328)](https://github.com/stdlib-js/stdlib/pull/11328) _(by Guneet Gill)_
 
@@ -37,10 +38,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Guneet Gill
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
